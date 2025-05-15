@@ -1,0 +1,38 @@
+# _config.yml
+# Site settings
+title: Stanley Zheng
+email: SZ  # Your email
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+# Build settings
+markdown: kramdown # Or your preferred Markdown processor (e.g., CommonMark)
+theme: minima # Example theme, you might use a different one or none
+plugins:
+  - jekyll-feed # Example plugin for RSS feed
+
+# Optional: If you are hosting on a subpath (e.g., yourusername.github.io/your-repo)
+# For Cloudflare Pages with a custom domain, you often don't need baseurl
+# baseurl: "/your-repo" # the subpath of your site, e.g. /blog
+
+# Optional: URL settings
+# For Cloudflare Pages with a custom domain, this is usually your domain (e.g., https://www.yourdomain.com)
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Processing README.md
+# By default, Jekyll processes index.md or index.html in the root into the site index.
+# It also often processes README.md if no index file exists or depending on theme config.
+# No specific config is usually needed here for README.md -> index.html conversion.
+
+# Exclude files from the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules # if you use npm
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .forestry/ # Exclude forestry config files from the build output
